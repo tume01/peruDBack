@@ -1,0 +1,51 @@
+[
+    {
+        "model": "category.Category",
+        "pk": 1,
+        "fields": {
+            "name": "¿A quién se lo conte?"
+        }
+    },
+    {
+        "model": "category.Category",
+        "pk": 2,
+        "fields": {
+            "name": "Ubicación"
+        }
+    },
+    {
+        "model": "category.Category",
+        "pk": 3,
+        "fields": {
+            "name": "Sección"
+        }
+    },
+    {
+        "model": "category.Category",
+        "pk": 4,
+        "fields": {
+            "name": "Género"
+        }
+    },
+    {
+        "model": "category.Category",
+        "pk": 5,
+        "fields": {
+            "name": "Tipo de Violencia"
+        }
+    },
+    {
+        "model": "category.Category",
+        "pk": 6,
+        "fields": {
+            "name": "Emoción"
+        }
+    },
+    {
+        "model": "category.Category",
+        "pk": 7,
+        "fields": {
+            "name": "Tema Tratado"
+        }
+    }
+]

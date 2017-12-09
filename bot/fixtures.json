@@ -1,0 +1,249 @@
+[
+    {
+        "model": "bot.Conversation",
+        "pk": 10,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "fisica",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 11,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "fisica",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 12,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "fisica",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 13,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "positive",
+            "violence_type": "fisica",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 14,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "positive",
+            "violence_type": "fisica",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 15,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "positive",
+            "violence_type": "fisica",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 16,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "neutral",
+            "violence_type": "fisica",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 17,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "neutral",
+            "violence_type": "fisica",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 18,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "neutral",
+            "violence_type": "fisica",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 19,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "emocional",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 20,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "emocional",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 21,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "emocional",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 22,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "positive",
+            "violence_type": "emocional",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 23,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "positive",
+            "violence_type": "emocional",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 24,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "positive",
+            "violence_type": "emocional",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 25,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "neutral",
+            "violence_type": "emocional",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 26,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "neutral",
+            "violence_type": "emocional",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 27,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "sexual",
+            "genre": "Femenino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    },
+    {
+        "model": "bot.Conversation",
+        "pk": 28,
+        "fields": {
+            "sender_id": "1234",
+            "sentiment": "negative",
+            "violence_type": "sexual",
+            "genre": "Masculino",
+            "grade": "1ero",
+            "grade_section": "c",
+            "grade_level": "secundaria"
+        }
+    }
+]
