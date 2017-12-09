@@ -7,7 +7,6 @@ from rest_framework.decorators import list_route
 from django.http import HttpResponse
 from rest_framework import status
 from django.conf import settings
-from bot.services import WatsonService
 from django.db.models import Count
 import json
 import requests
@@ -73,37 +72,7 @@ class MessageViewSet(viewsets.ModelViewSet):
         conversation, created = Conversation.objects.get_or_create(
             sender_id=sender_id)
         context = conversation.context
-        try:
-            if conversation.detect_sentiment is not None and conversation.detect_sentiment:
-                sentiment_response = WatsonService().get_sentiment(message)
-                print('sentiments')
-                print(sentiment_response)
-                sentiment_analyzis = sentiment_response.get(
-                    'sentiment').get('document')
-                conversation.sentiment = sentiment_analyzis.get('label')
-                conversation.sentiment_value = sentiment_analyzis.get('score')
-                conversation.detect_sentiment = False
-                if sentiment_analyzis.get('label') == 'negative':
-                    message = 'negativo'
-                elif sentiment_analyzis.get('label') == 'positive':
-                    message = 'positivo'
-                else:
-                    message = 'normal'
-        except Exception as e:
-            print(e)
-
-        watson_response, watson_message, buttons, sentiment = WatsonService().send_message(message,
-                                                                                           context)
-        new_context = watson_response.get('context')
-        conversation.context = new_context
-        print(conversation.detect_sentiment)
-        print("cambio")
-        print(sentiment)
-        self.update_conversation(conversation, watson_response.get('entities'))
-        conversation.detect_sentiment = sentiment
-        conversation.save()
-
-        self.send_message(sender_id, str(watson_message), buttons)
+        self.send_message(sender_id, str(message))
 
     def update_conversation(self, conversation, entities):
         for entity in entities:

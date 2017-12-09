@@ -25,12 +25,7 @@ SECRET_KEY = 'fg3q-msmsgh5ww4&#%5r4@rw3mylb#+a5l4(5st4z1-v#u^sul'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'a8878aed.ngrok.io',
-    '127.0.0.1',
-    'localhost',
-    '775b3c90.ngrok.io',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -92,9 +87,9 @@ WSGI_APPLICATION = 'helpBot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ods',
+        'NAME': 'peruD',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
@@ -166,11 +161,6 @@ API_PERMISSIONS = (
     'patch',
 )
 
-BOT_APP_TOKEN = 'EAAFALgO5ZCHUBAFJV2VZCq5EWetEijbYosi5cZAWOojtkFdPoZCDFlo2dplUl9mHO1QQ274nhaFAJeUzcZBxFS8iKispNwMKNjh9e6OR4kkbcTK63lo6rfs0UrMNAU3niOZCWovfH92ZBzI1pt4cZBo9ZAhhMd0hMVAGQeZC5msqALswZDZD'
-WATSON_USERNAME = '74f64786-6c0b-4aeb-9d97-7d8c33f5f58e'
-WATSON_PASSWORD = 'uj6WnYsTKNQo'
-WATSON_WORKSPACE = '744c2c39-5f1c-41ad-bf0e-a20d48db7bb1'
-NLU_USERNAME = 'e56deaec-5ed2-4de2-b54c-5ed9f7c5ac08'
-NLU_PASSWORD = 'FzMge6zsrbcv'
+BOT_APP_TOKEN = 'EAAZA1HjZBwvwMBAOQ52ZBZAQiAUMAOQI2TFxkNBQs32dc04ivqJZCZAlaEZCK0xaPAM15HGjSqhjHCJ7HonsOI6sqOa5AhHyafv7iGBzbafQT8JrNk2ObGtcyYJYzGdAEPQKd1m0R3XPm4IbsSfNdcnUZBWvBaVDoJCNFZCTtZAiPpZAQZDZD'
 
 CORS_ORIGIN_ALLOW_ALL = True
