@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
 
-from .models import Incident, IncidentType
+from .models import Incident, IncidentType, PoliceStation
 
 
 @admin.register(Incident)
@@ -18,4 +18,12 @@ class IncidentTypeAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'name',
+    )
+
+@admin.register(PoliceStation)
+class PoliceStationAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'id',
+        'address',
     )
