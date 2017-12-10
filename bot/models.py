@@ -4,82 +4,118 @@ from django.conf import settings
 from django_mysql.models import Model, JSONField
 from django.db import models
 
+class IncidentType(TimeStampedModel):
 
-class Message(TimeStampedModel, Model):
-
-    text = models.CharField(
-        max_length=5000,
-        help_text='user message',
-        blank=True,
-        null=True,
+    INCIDENT = 1
+    PRE_INCIDENT = 2
+    name = models.CharField(
+        max_length=50
     )
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         ordering = ['-created']
         default_permissions = settings.API_PERMISSIONS
 
+class Incident(TimeStampedModel):
 
-class Conversation(TimeStampedModel):
+    type = models.ForeignKey(
+        IncidentType,
+        on_delete=models.CASCADE,
+        null=True,
+    )
 
-    context = JSONField()
     sender_id = models.CharField(
         max_length=5000,
     )
 
-    grade = models.CharField(
-        max_length=100,
+    latitude = models.DecimalField(
+        max_digits=9,
+        decimal_places=6,
+        blank=True,
         null=True,
     )
 
-    confidence_person = models.CharField(
-        max_length=100,
+    longitude = models.DecimalField(
+        max_digits=9,
+        decimal_places=6,
+        blank=True,
         null=True,
     )
 
-    grade_section = models.CharField(
-        max_length=100,
+    evidence_media = models.CharField(
+        max_length=5000,
+        blank=True,
         null=True,
     )
 
-    grade_level = models.CharField(
-        max_length=100,
-        null=True,
-    )
+    is_anonymous = models.NullBooleanField()
 
-    problem_location = models.CharField(
-        max_length=100,
-        null=True,
-    )
+    started = models.NullBooleanField()
 
     genre = models.CharField(
-        max_length=10,
+        max_length=50,
         null=True,
     )
 
-    violence_type = models.CharField(
-        max_length=100,
+    civil_state = models.CharField(
+        max_length=50,
         null=True,
     )
 
-    topics = JSONField()
-
-    district = models.CharField(
-        max_length=100,
+    profession = models.CharField(
+        max_length=50,
         null=True,
     )
 
-    sentiment = models.CharField(
-        max_length=100,
+    address = models.CharField(
+        max_length=50,
         null=True,
     )
 
-    sentiment_value = models.DecimalField(
-        max_digits=19,
-        decimal_places=10,
+    age = models.IntegerField(
         null=True,
     )
 
-    detect_sentiment = models.NullBooleanField()
+    dni = models.CharField(
+        max_length=50,
+        null=True,
+    )
+
+    name = models.CharField(
+        max_length=50,
+        null=True,
+    )
+
+    date = models.DateField(null=True)
+
+    time = models.TimeField(null=True)
+
+    kind = models.CharField(
+        max_length=50,
+        null=True,
+    )
+
+    description = models.CharField(
+        max_length=5000,
+        null=True,
+    )
+
+    have_proof = models.NullBooleanField()
+
+    requested_date = models.NullBooleanField()
+
+    request_kind = models.NullBooleanField()
+
+    proof_requested = models.NullBooleanField()
+
+    evidence_requested = models.NullBooleanField()
+
+    ended = models.NullBooleanField()
+
+    location_requested = models.NullBooleanField()
 
     class Meta:
         ordering = ['-created']

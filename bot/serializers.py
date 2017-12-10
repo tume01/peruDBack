@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
-from bot.models import Message
+from bot.models import Incident
 from rest_framework import serializers
 
 
-class MessageSerializer(serializers.ModelSerializer):
+class IncidentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Message
-        fields = (
-            'id',
-            'text',
-        )
+        model = Incident
+        fields = '__all__'
