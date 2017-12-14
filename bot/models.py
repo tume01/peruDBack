@@ -152,7 +152,7 @@ class Incident(TimeStampedModel):
         ]
 
     def san_isidro_polygon(self):
-        return Polygon(
+        return Polygon([
             [-12.0908124, -77.0228124],
             [-12.0890605, -77.0098378],
             [-12.0889277, -77.0074003],
@@ -240,10 +240,10 @@ class Incident(TimeStampedModel):
             [-12.0911894, -77.0298789],
             [-12.0919101, -77.0301679],
             [-12.0908124, -77.0228124],
-        )
+        ])
 
     def magdalena_polygon(self):
-        return Polygon(
+        return Polygon([
             [-12.0867050, -77.0633300],
             [-12.0870429, -77.0624160],
             [-12.0918867, -77.0549843],
@@ -287,10 +287,10 @@ class Incident(TimeStampedModel):
             [-12.0837597, -77.0722851],
             [-12.0837714, -77.0722187],
             [-12.0835839, -77.0721035],
-        )
+        ])
 
     def miraflores_polygon(self):
-        return Polygon(
+        return Polygon([
             [-12.1093749, -77.0263007],
             [-12.1122949, -77.0259746],
             [-12.1133730, -77.0259082],
@@ -435,7 +435,7 @@ class Incident(TimeStampedModel):
             [-12.1061210, -77.0273007],
             [-12.1082617, -77.0264218],
             [-12.1093749, -77.0263007]
-        )
+        ])
 
     @property
     def near_police_station(self):
