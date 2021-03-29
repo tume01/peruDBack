@@ -11,7 +11,7 @@ djangorestframework==3.6.4
 idna==2.6
 mysqlclient==1.3.12
 pycparser==2.18
-Pygments==2.2.0
+Pygments==2.7.4
 pyOpenSSL==17.3.0
 pysolr==3.6.0
 pytz==2017.2
